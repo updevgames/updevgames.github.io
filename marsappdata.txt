@@ -1,4 +1,4 @@
-MARSCOLONY_IOS_VERSION|2.10.005
+MARSCOLONY_IOS_VERSION|2.10.006
 MARSCOLONY_IOS_UPDATEINFO|-Process speed is optimized-Fixed bugs-Added the possibility of playing in landscape orientation-Added Gamepads support-Added camera rotation-Updated UI-Added additional tasks-Added tasks menu-Added a backpack with items-Added new items to complete additional missions-Added meteor showers
 MARSCOLONY_IOS_CANPLAYWITHOUTUPDATE|true
 MARSCOLONY_ANDROID_VERSION|2.10.005
