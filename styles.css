@@ -214,7 +214,7 @@ footer {
     display: flex;
     gap: 15px;
     margin-top: 10px;
-    padding-top: 30px;
+    padding-top: 0px;
 }
 
 /* Іконки соцмереж */
@@ -247,4 +247,306 @@ footer {
 
 .streamer-button:hover {
     background-color: #2a475e; /* Світліший фіолетовий */
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------- Хедер ---------------*/
+.top-header {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Логотип-кнопка Up.Dev */
+.logo a {
+    color: white; /* Білий текст */
+    text-decoration: none; /* Забираємо підкреслення */
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Додаємо ефект при наведенні */
+.logo a:hover {
+    color: #bbbbbb; /* Світло-сірий при наведенні */
+}
+
+
+/* Соц. кнопки */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-right: 70px; /* Додаємо відступ справа */
+}
+
+/* Іконки */
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+/* Анімація при наведенні */
+.social-icon img:hover {
+    transform: scale(1.2);
+}
+
+/*--------------- Головна секція ---------------*/
+#hero {
+    background: url('DistantColony/DCBackground.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Вирівнюємо по центру */
+    flex-direction: column; /* Всі елементи в колонку */
+    padding: 80px 20px;
+    position: relative;
+}
+
+/* Затемнення фону */
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Контент */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 800px; /* Обмеження ширини */
+}
+
+/* Логотип */
+.hero-logo {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Назва гри у головній секції */
+.hero-title {
+    font-size: 5em; /* Розмір */
+    font-weight: bold;
+    color: white;
+    margin: 10px 0 20px; /* Відступи між логотипом і описом */
+    text-transform: uppercase;
+}
+
+/* Опис */
+.hero-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Кнопка Wishlist */
+.wishlist-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    background-color: #2f4561;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-bottom: 20px;
+}
+
+.wishlist-button:hover {
+    background-color: #24354b;
+}
+
+/* Відео */
+.hero-video {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero-video iframe {
+    border: 5px solid white;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+
+
+/*--------------- Секція опису гри ---------------*/
+#description {
+    text-align: center;
+    padding: 80px 40px;
+    color: white;
+    background: #11141d;
+}
+
+/* Контейнер тексту */
+.description-content {
+    max-width: 800px; /* Обмежуємо ширину тексту */
+    margin: 0 auto; /* Центруємо */
+    text-align: left; /* Вирівнюємо текст по лівому краю */
+}
+
+/* Заголовок */
+#description h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Список (щоб виглядав добре) */
+#description ul {
+    padding-left: 20px;
+}
+
+#description ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+
+/*--------------- Секція особливостей ---------------*/
+#features {
+    text-align: center;
+    padding: 80px 40px;
+    background: #11141d;
+}
+
+#features h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* Грід для панелей */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Панелі особливостей */
+.feature {
+    width: 100%;
+    aspect-ratio: 6 / 5; /* Було 3:5 → Змінено на 6:5 (ширина x2) */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+/* Текст у панелі */
+.feature-text {
+    background: rgba(0, 0, 0, 0.281);
+    padding: 15px;
+    color: white;
+    text-align: left;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+.feature-text h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.feature-text p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+}
+
+/* Контейнер для кнопки Wishlist під Features */
+.wishlist-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Кнопка Wishlist */
+.wishlist-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    background-color: #a77a00;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-bottom: 20px;
+}
+
+.wishlist-button:hover {
+    background-color: #7a5a00;
+}
+
+/* Адаптація для мобільних */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .features-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Адаптація для мобільних */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .top-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .wishlist-button {
+        width: 100%;
+    }
+
+    #features {
+        padding: 60px 20px;
+    }
 }
