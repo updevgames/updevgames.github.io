@@ -192,9 +192,9 @@ footer {
 
     .square-button {
         width: 180px;
-        height: 60px;
+        height: 30px;
         font-size: 1.5em;
-        line-height: 60px;
+        line-height: 30px;
     }
 }
 
@@ -509,7 +509,6 @@ footer {
     }
 
     .wishlist-button {
-        width: 100%;
     }
 
     #features {
